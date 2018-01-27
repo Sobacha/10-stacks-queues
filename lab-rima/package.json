@@ -1,0 +1,21 @@
+{
+  "name": "10-stack-queue",
+  "version": "1.0.0",
+  "description": "This is an assignment for cf-401.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "eslint": "^4.16.0",
+    "jest": "^22.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --verbose -i",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "Rima",
+  "license": "ISC"
+}
