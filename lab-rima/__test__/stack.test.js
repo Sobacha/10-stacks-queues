@@ -25,7 +25,7 @@ describe('Stack data structure module', function(){
 
   describe('push function', () => {
     test('should have a len of 50', () => {
-      [...Array(50)].map((e, i) => this.stack.push(~~(Math.random() * 1)));
+      [...Array(50)].map(() => this.stack.push(~~(Math.random() * 1)));
       expect(this.stack.len).toEqual(50);
     });
     test('should add a new node with the value 1 to the top of Stack', () => {
@@ -34,12 +34,12 @@ describe('Stack data structure module', function(){
     });
     test('should throw an error when len is more than maxLen', () => {
       expect( () => {
-        [...Array(1049)].map((e, i) => this.stack.push(~~(Math.random() * 1)));})
+        [...Array(1049)].map(() => this.stack.push(~~(Math.random() * 1)));})
         .toThrow('Stack overflow');
     });
     test('should be valid when len equals to maxLen', () => {
       expect( () => {
-        [...Array(1048)].map((e, i) => this.stack.push(~~(Math.random() * 1)));})
+        [...Array(1048)].map(() => this.stack.push(~~(Math.random() * 1)));})
         .not.toThrow('Stack overflow');
     });
   });
